@@ -1,0 +1,61 @@
+.heading-1 {
+  font-size: 200px;
+  font-weight: 700;
+  line-height: 200px;
+  color: $black;
+}
+
+.heading-2 {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 84px;
+  color: $black;
+}
+
+.heading-3 {
+}
+
+.heading-4 {
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 30px;
+  color: $black;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+@include respond(tab) {
+  .heading-1 {
+    font-size: 110px;
+    line-height: 110px;
+  }
+}
+
+@include respond(mob) {
+  .heading-1 {
+    font-size: 46px;
+    line-height: 46px;
+  }
+
+  .heading-2 {
+    font-size: 36px;
+    line-height: 43px;
+  }
+
+  .heading-4 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}

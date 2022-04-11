@@ -1,0 +1,62 @@
+.nav__hamburger-menu {
+  display: none;
+
+  @include respond(tab) {
+    display: block;
+    width: 30px;
+    height: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: relative;
+
+    & span {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      display: inline-block;
+      height: 3px;
+      background-color: $black;
+      transition: all 0.3s;
+      width: 80%;
+
+      &:first-child {
+        top: 7px;
+      }
+
+      &:last-child {
+        bottom: 7px;
+      }
+    }
+
+    &.active {
+      & span {
+        &:first-child {
+          top: 10px;
+          transform: translate(-50%) rotate(135deg);
+        }
+
+        &:last-child {
+          top: 10px;
+          transform: translate(-50%) rotate(-135deg);
+        }
+      }
+    }
+  }
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 700;
+  background-color: $blue;
+  padding: 15px 30px;
+  border-radius: 100px;
+  color: $white;
+  transition: all 0.3s;
+  width: fit-content;
+  line-height: 19px;
+
+  &:hover {
+    background: $blue-dark;
+  }
+}
