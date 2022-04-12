@@ -11,7 +11,10 @@
       </div>
       <div
         class="hero-home__backgorund"
-        style="background: url(../../assets/images/home/hero-dots.png)"
+        style="
+          background: url(../../assets/images/home/hero-dots.png) no-repeat
+            center center / cover;
+        "
       >
         <div class="wrapper">
           <div class="hero-home__content">
@@ -218,6 +221,38 @@
               </li>
             </ul>
           </div>
+        </div>
+      </section>
+
+      <section class="carousel">
+        <div class="wrapper">
+          <div class="carousel__heading-box">
+            <h2 class="carousel__heading heading-2">Our team</h2>
+            <a href="#" class="carousel__link btn">View our whole team</a>
+          </div>
+          <h3 class="carousel__sub-heading heading-3">Leadership team</h3>
+          <div class="carousel__slides">
+            <div class="carousel__slide card">
+              <img
+                src="../assets/images/people/Profile Image=2.png"
+                alt="Tom Parenteau"
+                class="carousel__img card__img"
+              />
+              <span class="carousel__name card__name">Tom Parenteau</span>
+              <span class="carousel__title card__title">Tom Parenteau</span>
+            </div>
+          </div>
+          <div class="carousel__btns">
+            <button
+              class="carousel__btn carousel__btn-left deactive js-btn-left"
+            >
+              <i class="carousel__btn-icon icon-navigate_before"></i>
+            </button>
+            <button class="carousel__btn carousel__btn-right js-btn-right">
+              <i class="carousel__btn-icon icon-navigate_next"></i>
+            </button>
+          </div>
+          <a href="#" class="carousel__link-mob btn">View our whole team</a>
         </div>
       </section>
 

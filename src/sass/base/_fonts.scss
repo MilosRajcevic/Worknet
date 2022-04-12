@@ -26,7 +26,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .icon-external-link:before {
   content: "\e900";
 }
@@ -65,4 +64,7 @@
 }
 .icon-navigate_next:before {
   content: "\e901";
+}
+.icon-navigate_before:before {
+  content: "\e90a";
 }

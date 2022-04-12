@@ -1,4 +1,6 @@
 "use strict";
+import Swiper from "https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js";
+
 const activeClassName = "active";
 const mobMenu = document.querySelector(".js-mob-menu");
 const navList = document.querySelector(".js-nav-list");

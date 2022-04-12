@@ -81,7 +81,6 @@ function sassTask(done) {
 //         presets: [["@babel/env", { modules: false }]],
 //       })
 //     )
-//     .pipe(concat("script.js"))
 //     .pipe(uglyfy())
 //     .pipe(
 //       rename(function (path) {
@@ -114,7 +113,7 @@ function jsTask(done) {
     )
     .pipe(sourcemaps.write("."))
     .pipe(dest("./dist/js"));
-  done();
+  done(browserSync.reload());
 }
 
 // HTML minify
