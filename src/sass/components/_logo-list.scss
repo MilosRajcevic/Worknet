@@ -1,0 +1,98 @@
+.logo-list {
+  position: relative;
+  padding: 104px 0 174px;
+
+  @include respond(tab) {
+    padding: 70px 0 110px;
+  }
+
+  @include respond(mob) {
+    padding: 50px 0 70px;
+  }
+}
+
+.logo-list__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba($black, 0.4);
+  z-index: 1;
+}
+
+.logo-list__content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+
+  @include respond(tab) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @include respond(mob) {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.logo-list__heading {
+  width: 420px;
+  color: $white;
+  font-weight: 700;
+  margin-right: 60px;
+
+  @include respond(tab) {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  @include respond(mob) {
+    width: auto;
+  }
+}
+
+.logo-list__list {
+  display: flex;
+
+  @include respond(mob) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+.logo-list__item {
+  width: 250px;
+  margin-right: 30px;
+
+  @include respond(mob) {
+    margin-right: 0;
+
+    &:not(:first-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.logo-list__icon {
+  display: inline-block;
+  margin-bottom: 30px;
+
+  @include respond(mob) {
+    margin-bottom: 15px;
+  }
+}
+
+.logo-list__text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+
+  @include respond(mob) {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+}
