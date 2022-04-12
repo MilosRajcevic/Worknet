@@ -17,7 +17,7 @@
       display: inline-block;
       height: 3px;
       background-color: $black;
-      transition: all 0.3s;
+      transition: transform 0.3s;
       width: 80%;
 
       &:first-child {
@@ -52,7 +52,7 @@
   padding: 15px 30px;
   border-radius: 100px;
   color: $white;
-  transition: all 0.3s;
+  transition: background 0.3s;
   width: fit-content;
   line-height: 19px;
 
