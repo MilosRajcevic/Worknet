@@ -64,6 +64,7 @@
 
 .carousel__btns {
   display: flex;
+  justify-content: flex-end;
 
   @include respond(tab) {
     justify-content: center;

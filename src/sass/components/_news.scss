@@ -1,0 +1,155 @@
+.news {
+  padding: 0 0 115px;
+
+  @include respond(tab) {
+    padding: 0 0 100px;
+  }
+  @include respond(mob) {
+    padding: 0 0 70px;
+  }
+}
+
+.news__content {
+}
+
+.news__heading-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+
+  @include respond(tab) {
+    margin-bottom: 30px;
+  }
+}
+
+.news__heading {
+}
+
+.news__link {
+  @include respond(mob) {
+    display: none;
+  }
+}
+
+.news__link-mob {
+  display: none;
+
+  @include respond(mob) {
+    display: block;
+  }
+}
+
+.news__news {
+  display: flex;
+
+  @include respond(mob) {
+    flex-direction: column;
+  }
+
+  @include respond(mob) {
+    margin-bottom: 45px;
+  }
+}
+
+.news__card {
+  max-width: 605px;
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  @include respond(tab) {
+    max-width: 338px;
+  }
+
+  @include respond(mob) {
+    &:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 36px;
+      max-width: 100%;
+    }
+  }
+}
+
+.news__img {
+  margin-bottom: 40px;
+  width: 100%;
+
+  @include respond(mob) {
+    margin-bottom: 20px;
+    max-height: 160px;
+  }
+}
+
+.news__info {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px;
+  color: $grey;
+  margin-bottom: 20px;
+
+  @include respond(mob) {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.news__category {
+  padding: 7px 15px;
+  border: 1px solid $grey;
+  border-radius: 100px;
+  margin-right: 20px;
+  transition: color 0.3s, background 0.3s;
+
+  &:hover {
+    color: $white;
+    background: $blue;
+  }
+}
+
+.news__text {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  color: $black;
+  margin-bottom: 30px;
+
+  @include respond(tab) {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  @include respond(mob) {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+}
+
+.news__btn {
+  padding: 15px;
+  border: 1px solid $grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border-radius: 50%;
+  transition: color 0.3s, background 0.3s;
+
+  &:hover {
+    background: $blue;
+    & .news__btn-icon {
+      color: $white;
+    }
+  }
+}
+
+.news__btn-icon {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $blue;
+}
