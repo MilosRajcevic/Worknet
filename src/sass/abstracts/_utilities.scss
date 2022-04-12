@@ -31,10 +31,10 @@
   position: fixed;
   z-index: 50;
   background: $white;
-  transition: all 0.2s linear;
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  transition: opacity 0.2s linear;
 
   &.active {
     visibility: visible;

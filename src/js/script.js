@@ -4,6 +4,7 @@ const mobMenu = document.querySelector(".js-mob-menu");
 const navList = document.querySelector(".js-nav-list");
 const navItem = document.querySelectorAll(".nav__item");
 const overlay = document.querySelector(".overlay");
+const btnScroll = document.querySelector(".js-btn-scroll");
 
 mobMenu.addEventListener("click", function () {
   [navList, mobMenu, overlay].forEach((el) =>

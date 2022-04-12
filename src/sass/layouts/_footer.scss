@@ -1,26 +1,69 @@
 .footer {
   background-color: $black;
   padding: 83px 0 64px;
+
+  @include respond(tab) {
+    padding: 50px 0 44px;
+  }
+
+  @include respond(mob) {
+    padding: 43px 0 47px;
+  }
 }
 .footer__wrapper {
   max-width: 1120px;
   padding: 0 4px;
   margin: 0 auto;
+
+  @include respond(tab) {
+    padding: 0 20px;
+  }
 }
 
 .footer__content-top {
   display: flex;
   justify-content: space-between;
   margin-bottom: 58px;
+
+  @include respond(tab) {
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+    justify-content: flex-start;
+  }
+
+  @include respond(mob) {
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+    justify-content: space-between;
+  }
 }
 
 .footer__logo-box {
   display: flex;
   flex-direction: column;
+
+  @include respond(tab) {
+    flex-direction: row;
+    margin-bottom: 72px;
+  }
+
+  @include respond(mob) {
+    flex-direction: column;
+    margin-bottom: 33px;
+  }
 }
 
 .footer__logo {
   margin-bottom: 25px;
+
+  @include respond(tab) {
+    margin-right: 184px;
+  }
+
+  @include respond(mob) {
+    margin-right: 0;
+    width: 150px;
+  }
 }
 
 .footer__logo-img {
@@ -33,6 +76,11 @@
   -webkit-mask-repeat: no-repeat;
   width: 180px;
   height: 32px;
+
+  @include respond(mob) {
+    width: 150px;
+    height: 27px;
+  }
 }
 
 .footer__sing-box {
@@ -63,6 +111,20 @@
   width: fit-content;
 }
 
+.footer__nav {
+  @include respond(tab) {
+    &:not(:last-child) {
+      margin-right: 184px;
+    }
+  }
+
+  @include respond(mob) {
+    &:not(:last-child) {
+      margin-right: 0px;
+    }
+  }
+}
+
 .footer__item {
   &:not(:last-child) {
     margin-bottom: 23px;
@@ -74,7 +136,7 @@
   font-weight: 700;
   line-height: 16px;
   color: $white;
-  transition: all 0.3s;
+  transition: color 0.3s;
   width: fit-content;
 
   &:hover {
@@ -93,10 +155,15 @@
 
 .footer__link-sec {
   width: 200px;
-  transition: all 0.3s;
+  transition: color 0.3s;
 
   &:hover {
     color: $white;
+  }
+
+  @include respond(mob) {
+    width: 167px;
+    margin-right: 0;
   }
 }
 
@@ -104,10 +171,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include respond(tab) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  @include respond(mob) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 
 .footer__social-links {
   display: flex;
+
+  @include respond(tab) {
+    margin-bottom: 29px;
+  }
+
+  @include respond(mob) {
+    margin-bottom: 29px;
+  }
 }
 
 .footer__socila-item {
@@ -124,7 +209,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s;
+  transition: color 0.3s, border 0.3s;
 
   &:hover .footer__scoial-icon {
     color: $white;
@@ -140,89 +225,5 @@
   font-weight: 400;
   line-height: 16px;
   color: $white-light;
-  transition: all 0.3s;
-}
-
-@include respond(tab) {
-  .footer {
-    padding: 50px 0 44px;
-  }
-
-  .footer__wrapper {
-    padding: 0 20px;
-  }
-
-  .footer__content-top {
-    flex-wrap: wrap;
-    margin-bottom: 120px;
-    justify-content: flex-start;
-  }
-
-  .footer__logo-box {
-    flex-direction: row;
-    margin-bottom: 72px;
-  }
-
-  .footer__logo {
-    margin-right: 184px;
-  }
-
-  .footer__content-bottom {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
-  .footer__social-links {
-    margin-bottom: 29px;
-  }
-
-  .footer__nav {
-    &:not(:last-child) {
-      margin-right: 184px;
-    }
-  }
-}
-
-@include respond(mob) {
-  .footer {
-    padding: 43px 0 47px;
-  }
-
-  .footer__content-top {
-    flex-wrap: wrap;
-    margin-bottom: 70px;
-    justify-content: space-between;
-  }
-
-  .footer__logo-box {
-    flex-direction: column;
-    margin-bottom: 33px;
-  }
-
-  .footer__logo {
-    margin-right: 0;
-    width: 150px;
-  }
-  .footer__logo-img {
-    width: 150px;
-    height: 27px;
-  }
-
-  .footer__content-bottom {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
-  .footer__social-links {
-    margin-bottom: 29px;
-  }
-  .footer__link-sec {
-    width: 167px;
-    margin-right: 0;
-  }
-  .footer__nav {
-    &:not(:last-child) {
-      margin-right: 0px;
-    }
-  }
+  transition: color 0.3s;
 }

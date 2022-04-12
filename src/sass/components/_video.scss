@@ -1,20 +1,15 @@
 .video {
   padding: 177px 0 150px;
-}
 
-.video__video {
-  width: 100%;
-  min-height: 690px;
-}
-
-@include respond(tab) {
   .video__video {
-    min-height: 408px;
-  }
-}
+    width: 100%;
+    min-height: 690px;
 
-@include respond(mob) {
-  .video__video {
-    min-height: 188px;
+    @include respond(tab) {
+      min-height: 408px;
+    }
+    @include respond(mob) {
+      min-height: 188px;
+    }
   }
 }

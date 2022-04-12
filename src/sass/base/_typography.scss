@@ -3,6 +3,16 @@
   font-weight: 700;
   line-height: 200px;
   color: $black;
+
+  @include respond(tab) {
+    font-size: 110px;
+    line-height: 110px;
+  }
+
+  @include respond(mob) {
+    font-size: 46px;
+    line-height: 46px;
+  }
 }
 
 .heading-2 {
@@ -10,9 +20,23 @@
   font-weight: 700;
   line-height: 84px;
   color: $black;
+
+  @include respond(mob) {
+    font-size: 36px;
+    line-height: 43px;
+  }
 }
 
 .heading-3 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 39px;
+  color: $black;
+
+  @include respond(mob) {
+    font-size: 24px;
+    line-height: 31px;
+  }
 }
 
 .heading-4 {
@@ -20,6 +44,11 @@
   font-weight: 700;
   line-height: 30px;
   color: $black;
+
+  @include respond(mob) {
+    font-size: 18px;
+    line-height: 23px;
+  }
 }
 
 a {
@@ -34,28 +63,4 @@ li {
 img {
   display: block;
   height: auto;
-}
-
-@include respond(tab) {
-  .heading-1 {
-    font-size: 110px;
-    line-height: 110px;
-  }
-}
-
-@include respond(mob) {
-  .heading-1 {
-    font-size: 46px;
-    line-height: 46px;
-  }
-
-  .heading-2 {
-    font-size: 36px;
-    line-height: 43px;
-  }
-
-  .heading-4 {
-    font-size: 18px;
-    line-height: 23px;
-  }
 }

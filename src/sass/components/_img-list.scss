@@ -1,32 +1,86 @@
 .img-list {
   background-color: $grey-light;
   padding: 155px 0;
+
+  @include respond(tab) {
+    padding: 88px 0 105px;
+  }
+
+  @include respond(mob) {
+    padding: 48px 0 60px;
+  }
 }
 
 .img-list__content {
   display: flex;
+
+  @include respond(tab) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .img-list__img-box {
   margin-left: -190px;
+
+  @include respond(tab) {
+    margin-left: 0;
+  }
+}
+
+.img-list__img {
+  @include respond(tab) {
+    max-height: 610px;
+    margin-bottom: 40px;
+  }
+
+  @include respond(mob) {
+    max-height: 340px;
+    margin-bottom: 40px;
+  }
 }
 
 .img-list__text-box {
   margin-left: -150px;
   max-width: 530px;
+
+  @include respond(tab) {
+    margin-left: 0;
+    max-width: 530px;
+  }
 }
 
 .img-list__heading {
   margin-bottom: 50px;
+
+  @include respond(mob) {
+    margin-bottom: 30px;
+  }
 }
 
 .img-list__list {
   margin-bottom: 50px;
+
+  @include respond(mob) {
+    margin-bottom: 30px;
+  }
 }
 
 .img-list__item {
   display: flex;
   align-items: center;
+
+  @include respond(tab) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @include respond(mob) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .img-list__icon {
@@ -45,56 +99,4 @@
 
 .img-list__p {
   margin-bottom: 30px;
-}
-
-@include respond(tab) {
-  .img-list {
-    padding: 88px 0 105px;
-  }
-
-  .img-list__content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .img-list__img-box {
-    margin-left: 0;
-  }
-
-  .img-list__img {
-    max-height: 610px;
-    margin-bottom: 40px;
-  }
-
-  .img-list__text-box {
-    margin-left: 0;
-    max-width: 530px;
-  }
-  .img-list__item {
-    &:not(:last-child) {
-      margin-bottom: 20px;
-    }
-  }
-}
-
-@include respond(mob) {
-  .img-list {
-    padding: 48px 0 60px;
-  }
-  .img-list__heading {
-    margin-bottom: 30px;
-  }
-  .img-list__item {
-    &:not(:last-child) {
-      margin-bottom: 10px;
-    }
-  }
-  .img-list__list {
-    margin-bottom: 30px;
-  }
-
-  .img-list__img {
-    max-height: 340px;
-    margin-bottom: 40px;
-  }
 }
