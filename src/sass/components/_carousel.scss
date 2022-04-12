@@ -1,0 +1,154 @@
+.carousel {
+  padding: 150px 0 40px;
+
+  @include respond(tab) {
+    padding: 100px 0 40px;
+  }
+  @include respond(mob) {
+    padding: 70px 0 40px;
+  }
+}
+
+.carousel__heading-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.carousel__heading {
+}
+
+.carousel__link {
+  @include respond(mob) {
+    display: none;
+  }
+}
+
+.carousel__link-mob {
+  display: none;
+
+  @include respond(mob) {
+    display: block;
+  }
+}
+
+.carousel__sub-heading {
+  margin-bottom: 30px;
+}
+
+.carousel__slides {
+  margin-bottom: 30px;
+}
+
+.carousel__slide {
+}
+
+.carousel__img {
+  max-height: 392px;
+
+  @include respond(tab) {
+    max-height: 422px;
+  }
+
+  @include respond(mob) {
+    max-width: 180px;
+  }
+}
+
+.carousel__name {
+}
+
+.carousel__title {
+}
+
+.carousel__btns {
+  display: flex;
+
+  @include respond(tab) {
+    justify-content: center;
+  }
+
+  @include respond(mob) {
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+}
+
+.carousel__btn {
+  cursor: pointer;
+  border: 1px solid $grey;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+
+  &.deactive {
+    cursor: none;
+    pointer-events: none;
+    opacity: 0.4;
+  }
+
+  @include respond(mob) {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.carousel__btn-icon {
+  font-size: 50px;
+  line-height: 50px;
+  color: $blue;
+
+  @include respond(mob) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.carousel__btn-left {
+  margin-right: 20px;
+
+  @include respond(mob) {
+    margin-right: 10px;
+  }
+}
+
+.carousel__btn-right {
+}
+
+// Cards
+.card {
+}
+
+.card__img {
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.card__name {
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 30px;
+  color: $black;
+
+  @include respond(mob) {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+.card__title {
+  display: block;
+  font-size: 18px;
+  line-height: 29px;
+  color: $grey-text;
+
+  @include respond(mob) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

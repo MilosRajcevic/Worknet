@@ -14,6 +14,11 @@
   line-height: 37px;
   color: $grey-light;
   margin-bottom: 40px;
+
+  @include respond(mob) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .investors__list {
@@ -35,6 +40,11 @@
   @include respond(tab) {
     &:not(:last-child) {
       margin-right: 64px;
+    }
+  }
+  @include respond(mob) {
+    &:not(:last-child) {
+      margin-right: 25px;
     }
   }
 }
