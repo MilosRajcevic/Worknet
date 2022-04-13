@@ -87,16 +87,29 @@
   width: 80px;
   border-radius: 50%;
 
-  &.deactive {
-    cursor: none;
-    pointer-events: none;
-    opacity: 0.4;
-  }
-
   @include respond(mob) {
     height: 60px;
     width: 60px;
   }
+}
+
+.swiper-button-disabled {
+  cursor: none;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.swiper {
+  overflow: visible;
+}
+
+.swiper-slide {
+  opacity: 0.25;
+  width: auto;
+}
+
+.swiper-slide-visible {
+  opacity: 1;
 }
 
 .carousel__btn-icon {

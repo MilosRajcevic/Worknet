@@ -1,5 +1,5 @@
 .text-img {
-  padding: 165px 0;
+  padding: 165px 0 160px;
 
   @include respond(tab) {
     padding: 100px 0;
@@ -39,6 +39,7 @@
   line-height: 50px;
   color: $black;
   margin-bottom: 40px;
+  max-width: 507px;
 
   @include respond(mob) {
     font-size: 23px;
@@ -50,6 +51,7 @@
   font-size: 23px;
   line-height: 37px;
   color: $black;
+  max-width: 415px;
 
   @include respond(mob) {
     font-size: 16px;
@@ -58,16 +60,9 @@
 }
 
 .text-img__img-box {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
+  max-height: 635px;
 }
 
 .text-img__img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
 }

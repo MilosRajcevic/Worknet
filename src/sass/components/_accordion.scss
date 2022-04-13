@@ -1,0 +1,123 @@
+.accordion {
+  margin-bottom: 200px;
+
+  @include respond(tab) {
+    margin-bottom: 120px;
+  }
+
+  @include respond(mob) {
+    margin-bottom: 62px;
+  }
+}
+
+.accordion__header {
+  margin-bottom: 30px;
+}
+
+.accordion__content {
+  border-top: 2px solid $blue;
+}
+
+.accordion__btn {
+  background: none;
+  border: none;
+  margin-bottom: 45px;
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  @include respond(mob) {
+    margin-bottom: 31px;
+    margin-top: 16px;
+  }
+}
+
+.accordion__row {
+  &:not(:first-child) {
+    border-top: 2px solid $grey-light;
+  }
+}
+
+.accordion__btn-text {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  color: $grey-text;
+  text-align: start;
+
+  @include respond(mob) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.accordion__btn-icon {
+  position: relative;
+  width: 70px;
+  height: 40px;
+  transition: transform 0.4s;
+
+  & span {
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    background: $blue;
+    top: 50%;
+    left: 50%;
+    transition: transform 0.4s, opacity 0.3s;
+
+    @include respond(mob) {
+      height: 3px;
+      width: 20px;
+    }
+
+    &:first-child {
+      transform: translate(-50%, -50%);
+    }
+
+    &:last-child {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+  }
+}
+
+.accordion__btn {
+  &.active .accordion__btn-icon {
+    & span {
+      &:first-child {
+        transform: translateX(100%) rotate(360deg);
+        opacity: 0;
+      }
+
+      &:last-child {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+  }
+}
+
+.accordion__text-box {
+  max-height: 0;
+  @include invisible;
+  transition: opacity 0.3s, max-height 0.2s;
+
+  &.active {
+    @include visible;
+    max-height: 1000px;
+  }
+}
+
+.accordion__text {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 30px;
+  color: $grey-text;
+
+  @include respond(mob) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

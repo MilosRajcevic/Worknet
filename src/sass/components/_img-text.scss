@@ -1,0 +1,119 @@
+.img-text {
+  margin-bottom: 200px;
+
+  @include respond(tab) {
+    margin-bottom: 130px;
+  }
+
+  @include respond(mob) {
+    margin-bottom: 60px;
+  }
+}
+
+.img-text__content {
+  display: flex;
+  align-items: center;
+
+  & > :first-child {
+    margin-right: 100px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 100px;
+  }
+
+  @include respond(tab) {
+    & > :first-child {
+      margin-right: 62px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 80px;
+    }
+  }
+
+  @include respond(mob) {
+    flex-direction: column;
+
+    & > :first-child {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.img-text__reverse {
+  @include respond(mob) {
+    flex-direction: column-reverse;
+
+    & > :last-child {
+      margin-bottom: 20px;
+    }
+
+    & > :first-child {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.img-text__box {
+}
+
+.img-text__heading {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 84px;
+  color: $black;
+  margin-bottom: 20px;
+
+  @include respond(tab) {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  @include respond(mob) {
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 10px;
+  }
+}
+
+.img-text__text {
+  font-size: 23px;
+  line-height: 37px;
+  color: $grey;
+
+  @include respond(mob) {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 24px;
+  }
+}
+.img-text__text--btn {
+  margin-bottom: 20px;
+  @include respond(mob) {
+    margin-bottom: 10px;
+  }
+}
+
+.img-text__img-box {
+}
+
+.img-text__img {
+  @include respond(tab) {
+    height: 340px;
+    width: 340px;
+  }
+
+  @include respond(mob) {
+    height: auto;
+    width: 100%;
+    min-width: 100%;
+    max-height: 350px;
+  }
+}

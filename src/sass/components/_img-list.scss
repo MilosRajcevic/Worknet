@@ -21,7 +21,7 @@
 }
 
 .img-list__img-box {
-  margin-left: -190px;
+  margin-left: -220px;
 
   @include respond(tab) {
     margin-left: 0;
@@ -41,7 +41,7 @@
 }
 
 .img-list__text-box {
-  margin-left: -150px;
+  margin-left: -225px;
   max-width: 530px;
 
   @include respond(tab) {

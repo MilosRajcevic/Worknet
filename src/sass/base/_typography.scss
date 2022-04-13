@@ -1,17 +1,17 @@
 .heading-1 {
-  font-size: 200px;
+  font-size: 100px;
   font-weight: 700;
-  line-height: 200px;
+  line-height: 100px;
   color: $black;
 
   @include respond(tab) {
-    font-size: 110px;
-    line-height: 110px;
+    font-size: 80px;
+    line-height: 80px;
   }
 
   @include respond(mob) {
-    font-size: 46px;
-    line-height: 46px;
+    font-size: 48px;
+    line-height: 58px;
   }
 }
 
