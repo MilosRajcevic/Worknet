@@ -11,12 +11,10 @@
   }
 }
 .footer__wrapper {
-  max-width: 1120px;
-  padding: 0 4px;
-  margin: 0 auto;
+  padding-right: 120px;
 
   @include respond(tab) {
-    padding: 0 20px;
+    padding-right: 0;
   }
 }
 

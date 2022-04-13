@@ -21,6 +21,10 @@
   }
 }
 
+.nav__logo-img {
+  width: 100%;
+}
+
 .nav__list {
   display: flex;
   justify-content: center;
@@ -206,7 +210,9 @@
 }
 
 .nav__cta {
-  margin-right: 45px;
+  @include respond(tab) {
+    margin-right: 45px;
+  }
 
   @include respond(mob) {
     display: none;

@@ -29,11 +29,20 @@
   }
 }
 
-.hero-home__backgorund {
-}
-
 .hero-home__heading {
+  font-size: 200px;
+  line-height: 200px;
   margin-bottom: 20px;
+
+  @include respond(tab) {
+    font-size: 110px;
+    line-height: 110px;
+  }
+
+  @include respond(mob) {
+    font-size: 46px;
+    line-height: 46px;
+  }
 }
 
 .hero-home__text {

@@ -1,0 +1,327 @@
+// About page
+
+.hero-about {
+}
+
+.hero-about__nav {
+}
+
+.hero-about__content {
+  padding: 191px 0 116px;
+  border-bottom: 4px solid $black;
+  margin-bottom: 100px;
+
+  @include respond(tab) {
+    padding: 97px 0 70px;
+    margin-bottom: 80px;
+  }
+
+  @include respond(mob) {
+    padding: 40px 0 40px;
+
+    margin-bottom: 40px;
+  }
+}
+
+.hero-about__heading {
+  margin-bottom: 58px;
+
+  @include respond(tab) {
+    margin-bottom: 50px;
+  }
+
+  @include respond(mob) {
+    margin-bottom: 30px;
+  }
+}
+
+.hero-about__text {
+  font-size: 30px;
+  line-height: 42px;
+  color: $black;
+
+  @include respond(mob) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+// Quote section //
+.quote {
+}
+
+.quote__content {
+  position: relative;
+  padding-left: 50px;
+  border-left: 3px solid $blue;
+  margin-bottom: 200px;
+
+  @include respond(mob) {
+    padding-left: 25px;
+    margin-bottom: 90px;
+  }
+}
+
+.quote__bg {
+  position: absolute;
+  transform: translate(-10%, -40%);
+  top: 50%;
+  left: 0;
+  z-index: -1;
+
+  @include respond(tab) {
+    transform: translate(-50%, -50%);
+  }
+  @include respond(mob) {
+    display: none;
+  }
+}
+
+.quote__symbol {
+  color: $blue;
+  line-height: 1;
+  font-size: 150px;
+  height: 50px;
+  width: 50px;
+  margin-bottom: 20px;
+
+  @include respond(mob) {
+    font-size: 100px;
+    height: 25px;
+  }
+}
+
+.quote__text {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 67px;
+  color: $black;
+  margin-bottom: 20px;
+
+  @include respond(tab) {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  @include respond(mob) {
+    font-size: 23px;
+    line-height: 32px;
+  }
+}
+
+.quote__author {
+  font-size: 16px;
+  line-height: 22px;
+  color: $grey-text;
+}
+
+.quote__name {
+  font-weight: 400;
+}
+
+.quote__title {
+  font-weight: 500;
+}
+
+// Stats
+
+.stats {
+}
+
+.stats__content {
+  padding: 0 95px;
+  margin-bottom: 200px;
+  display: flex;
+
+  @include respond(tab) {
+    padding: 0;
+    margin-bottom: 140px;
+  }
+  @include respond(mob) {
+    margin-bottom: 90px;
+  }
+}
+
+.stats__box {
+  &:not(:last-child) {
+    margin-right: 210px;
+  }
+
+  @include respond(tab) {
+    width: 225px;
+    &:not(:last-child) {
+      margin-right: 26px;
+    }
+  }
+}
+
+.stats__num {
+  display: inline-block;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 90px;
+  color: $black;
+
+  @include respond(tab) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @include respond(mob) {
+    font-size: 37px;
+    line-height: 37px;
+  }
+}
+
+.stats__text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  color: $black;
+
+  @include respond(tab) {
+    font-size: 16px;
+    line-height: 29px;
+    font-weight: 400;
+  }
+
+  @include respond(mob) {
+    font-size: 12px;
+    line-height: 19px;
+  }
+}
+
+// Table
+.table {
+  margin-bottom: 150px;
+
+  @include respond(mob) {
+    margin-bottom: 100px;
+  }
+}
+
+.table__heading {
+  margin-bottom: 50px;
+}
+
+.table__table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+  border-top: 2px solid $grey-light;
+}
+
+.table__body {
+  & td,
+  th {
+    font-size: 18px;
+    line-height: 29px;
+    padding: 25px 20px;
+    vertical-align: top;
+  }
+
+  & th {
+    font-weight: 700;
+    color: $black;
+    width: 310px;
+  }
+
+  & td {
+    font-weight: 400;
+    color: $grey-text;
+  }
+
+  & tr:nth-child(even) {
+    background-color: $grey-light;
+  }
+
+  @include respond(mob) {
+    & td,
+    th {
+      padding: 25px 5px;
+    }
+    & th {
+      width: auto;
+    }
+  }
+}
+
+// Downloads section
+
+.downloads {
+  margin-bottom: 200px;
+
+  @include respond(tab) {
+    margin-bottom: 100px;
+  }
+
+  @include respond(mob) {
+    margin-bottom: 70px;
+  }
+}
+
+.downloads__content {
+  padding: 60px;
+  border: 1px solid $blue;
+  border-radius: 15px;
+
+  @include respond(mob) {
+    padding: 20px;
+  }
+}
+
+.downloads__heading {
+  font-weight: 500;
+  margin-bottom: 20px;
+
+  @include respond(mob) {
+    margin-bottom: 5px;
+  }
+}
+
+.downloads__box {
+}
+
+.downloads__row {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba($black, 0.15);
+
+  @include respond(mob) {
+    padding: 15px 0;
+  }
+}
+
+.downloads__icon {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: $blue;
+  margin-right: 10px;
+}
+
+.downloads__text,
+.downloads__size {
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.downloads__text {
+  color: $black;
+  margin-right: 10px;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $blue;
+    text-decoration: underline;
+  }
+
+  @include respond(mob) {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+.downloads__size {
+  color: $grey;
+}
