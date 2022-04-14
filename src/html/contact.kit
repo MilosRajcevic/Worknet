@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+  <!-- @import "head.kit"-->
+  <body>
+    <header class="hero-about">
+      <div class="wrapper">
+        <div class="hero-about__nav">
+          <!-- @import "nav.kit"-->
+        </div>
+        <div class="hero-about__content">
+          <h1 class="hero-about__heading heading-1">Contact us.</h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="contact-info">
+        <div class="wrapper">
+          <div class="contact-info__content">
+            <h2 class="contact-info__heading contact__heading">
+              Contact details
+            </h2>
+            <span class="contact-info__tel"
+              >Tel <br /><a href="tel:243153241" class="contact-info__number"
+                >01865 655474</a
+              ></span
+            >
+            <p class="contact-info__emails">Email</p>
+            <span class="contact-info__email"
+              >General:
+              <a href="mailto:" class="contact-info__email-link"
+                >contact@oslerdiagnostics.com</a
+              >
+            </span>
+            <span class="contact-info__email"
+              >Media:
+              <a href="mailto:" class="contact-info__email-link"
+                >media@oslerdiagnostics.com</a
+              >
+            </span>
+            <span class="contact-info__email"
+              >Business Development:
+              <a href="mailto:" class="contact-info__email-link"
+                >bd@oslerdiagnostics.com</a
+              >
+            </span>
+
+            <address class="contact-info__address">
+              <strong>Address</strong>
+              <p>
+                Osler Diagnostics Limited <br />
+                King Charles House <br />
+                Oxford <br />
+                OX1 1JD <br />
+                United Kingdom <br />
+              </p>
+            </address>
+          </div>
+
+          <div class="contact-info__content">
+            <h2 class="contact-info__heading contact__heading">
+              Send us a message
+            </h2>
+            <form class="form">
+              <div class="form__group">
+                <label for="first-name">Name*</label>
+                <input type="text" id="first-name" name="first-name" required />
+              </div>
+
+              <div class="form__group">
+                <label for="email"
+                  >Email address <span class="highlight-blue">*</span></label
+                >
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form__group">
+                <label for="organisation"
+                  >Organisation<span class="highlight-blue">*</span></label
+                >
+                <input
+                  type="text"
+                  id="organisation"
+                  name="organisation"
+                  required
+                />
+              </div>
+
+              <div class="form__group">
+                <label for="message"
+                  >Your message<span class="highlight-blue">*</span></label
+                >
+                <textarea
+                  class="form__message"
+                  id="message"
+                  name="message"
+                  rows="5"
+                  cols="5"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form__group">
+                <div>
+                  <input type="checkbox" id="yes" name="yes" checked />
+                  <label for="yes"
+                    >Nascetur proin in lacinia pulvinar commodo sem scelerisque
+                    ullamcorper habitant fermentum ut interdum malesuada
+                    parturient blandit interdum vel integer ullamcorper sit a
+                    tincidunt.<span class="highlight-blue">*</span></label
+                  >
+                </div>
+              </div>
+
+              <div class="form__submit">
+                <input type="submit" value="Submit" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- @import "footer.kit"-->
+    <div class="overlay"></div>
+  </body>
+</html>

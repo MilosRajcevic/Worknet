@@ -1,11 +1,5 @@
 // About page
 
-.hero-about {
-}
-
-.hero-about__nav {
-}
-
 .hero-about__content {
   padding: 191px 0 116px;
   border-bottom: 4px solid $black;
@@ -25,6 +19,10 @@
 
 .hero-about__heading {
   margin-bottom: 58px;
+
+  &:only-child {
+    margin-bottom: 0;
+  }
 
   @include respond(tab) {
     margin-bottom: 50px;
@@ -47,8 +45,6 @@
 }
 
 // Quote section //
-.quote {
-}
 
 .quote__content {
   position: relative;
@@ -123,9 +119,6 @@
 }
 
 // Stats
-
-.stats {
-}
 
 .stats__content {
   padding: 0 95px;
@@ -276,9 +269,6 @@
   @include respond(mob) {
     margin-bottom: 5px;
   }
-}
-
-.downloads__box {
 }
 
 .downloads__row {

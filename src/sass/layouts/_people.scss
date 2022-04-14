@@ -1,0 +1,54 @@
+.touch {
+  background-color: $black;
+  @include respond(tab) {
+    padding-top: 60px;
+  }
+
+  @include respond(mob) {
+    padding-top: 40px;
+  }
+}
+
+.touch__contnet {
+  display: flex;
+  align-items: center;
+
+  @include respond(tab) {
+    flex-direction: column;
+  }
+}
+
+.touch__text-box {
+  position: absolute;
+  max-width: 640px;
+
+  @include respond(tab) {
+    position: relative;
+  }
+}
+
+.touch__tag {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  color: $grey;
+  margin-bottom: 10px;
+}
+
+.touch__heading {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 70px;
+  margin-bottom: 40px;
+  color: $white;
+
+  @include respond(mob) {
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 20px;
+  }
+}
+
+.touch__img {
+  width: 100vw;
+}

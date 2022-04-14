@@ -49,3 +49,9 @@
 .highlight-grey-light {
   color: $grey-light;
 }
+
+.has-cover {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
