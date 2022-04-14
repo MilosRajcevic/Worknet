@@ -1,8 +1,17 @@
-.investors {
-}
-
 .investors--home {
   margin-bottom: 90px;
+}
+
+.investors--people {
+  margin-bottom: 150px;
+
+  @include respond(tab) {
+    margin-bottom: 90px;
+  }
+
+  @include respond(mob) {
+    margin-bottom: 70px;
+  }
 }
 
 .investors__heading {

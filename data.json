@@ -1,7 +1,102 @@
 {
-  "Test": {
-    "propertyOne": "One",
-    "propertyTwo": "Two",
-    "propertyThree": "three"
+  "team": {
+    "teamMember-1": {
+      "img": "../assets/images/people/Profile Image=1.png",
+      "name": "Connor Campbell",
+      "title": "CEO and co-founder"
+    },
+    "teamMember-2": {
+      "img": "../assets/images/people/Profile Image=2.png",
+      "name": "Tom Parenteau",
+      "title": "Chief Commercial Officer"
+    },
+    "teamMember-3": {
+      "img": "../assets/images/people/Profile Image=3.png",
+      "name": "David Edington",
+      "title": "Chief Technology Officer"
+    },
+    "teamMember-4": {
+      "img": "../assets/images/people/Profile Image=4.png",
+      "name": "Paul Dixon",
+      "title": "Chief Financial Officer"
+    },
+    "teamMember-5": {
+      "img": "../assets/images/people/Profile Image=5.png",
+      "name": "Laura Baers",
+      "title": "Chief of Staff"
+    },
+    "teamMember-6": {
+      "img": "../assets/images/people/Profile Image=6.png",
+      "name": "Michael Kew",
+      "title": "Head of Product"
+    },
+    "teamMember-7": {
+      "img": "../assets/images/people/Profile Image=7.png",
+      "name": "Sarah Malin",
+      "title": "Head of Delivery"
+    },
+    "teamMember-8": {
+      "img": "../assets/images/people/Profile Image=8.png",
+      "name": "Lester Gleeson",
+      "title": "Head of Quality"
+    },
+    "teamMember-9": {
+      "img": "../assets/images/people/Profile Image=9.png",
+      "name": "Robert Marshall",
+      "title": "Head of Sensor and Analyser"
+    },
+    "teamMember-10": {
+      "img": "../assets/images/people/Profile Image=10.png",
+      "name": "Kieran Lehane",
+      "title": "Head of Assay"
+    },
+    "teamMember-11": {
+      "img": "../assets/images/people/Profile Image=11.png",
+      "name": "Nuno Reis",
+      "title": "Director of Product Innovation & Head of Cartridge"
+    },
+    "teamMember-12": {
+      "img": "../assets/images/people/Profile Image=12.png",
+      "name": "Ben Howells",
+      "title": "Head of People"
+    }
+  },
+
+  "directors": {
+    "teamMember-1": {
+      "img": "../assets/images/people/Profile Image=1.png",
+      "name": "Connor Campbell",
+      "title": "CEO and co-founder"
+    },
+    "teamMember-2": {
+      "img": "../assets/images/people/Profile Image=2.png",
+      "name": "Tom Parenteau",
+      "title": "Chief Commercial Officer"
+    },
+    "teamMember-3": {
+      "img": "../assets/images/people/Profile Image=3.png",
+      "name": "David Edington",
+      "title": "Chief Technology Officer"
+    },
+    "teamMember-4": {
+      "img": "../assets/images/people/Profile Image=4.png",
+      "name": "Paul Dixon",
+      "title": "Chief Financial Officer"
+    },
+    "teamMember-5": {
+      "img": "../assets/images/people/Profile Image=5.png",
+      "name": "Laura Baers",
+      "title": "Chief of Staff"
+    },
+    "teamMember-6": {
+      "img": "../assets/images/people/Profile Image=6.png",
+      "name": "Michael Kew",
+      "title": "Head of Product"
+    },
+    "teamMember-7": {
+      "img": "../assets/images/people/Profile Image=8.png",
+      "name": "Michael Kew",
+      "title": "Head of Product"
+    }
   }
 }

@@ -61,9 +61,6 @@
   }
 }
 
-.img-text__box {
-}
-
 .img-text__heading {
   font-size: 70px;
   font-weight: 700;
@@ -99,9 +96,6 @@
   @include respond(mob) {
     margin-bottom: 10px;
   }
-}
-
-.img-text__img-box {
 }
 
 .img-text__img {

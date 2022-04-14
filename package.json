@@ -42,10 +42,5 @@
     "gulp-notify": "^4.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-sourcemaps": "^3.0.0"
-  },
-  "browserify": {
-    "transform": [
-      "babelify"
-    ]
   }
 }
