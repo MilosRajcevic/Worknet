@@ -27,19 +27,19 @@
             <p class="contact-info__emails">Email</p>
             <span class="contact-info__email"
               >General:
-              <a href="mailto:" class="contact-info__email-link"
+              <a class="contact-info__email-link" href="mailto:"
                 >contact@oslerdiagnostics.com</a
               >
             </span>
             <span class="contact-info__email"
               >Media:
-              <a href="mailto:" class="contact-info__email-link"
+              <a class="contact-info__email-link" href="mailto:"
                 >media@oslerdiagnostics.com</a
               >
             </span>
             <span class="contact-info__email"
               >Business Development:
-              <a href="mailto:" class="contact-info__email-link"
+              <a class="contact-info__email-link" href="mailto:"
                 >bd@oslerdiagnostics.com</a
               >
             </span>
@@ -62,31 +62,66 @@
             </h2>
             <form class="form">
               <div class="form__group">
-                <label for="first-name">Name*</label>
-                <input type="text" id="first-name" name="first-name" required />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="&nbsp;"
+                  required
+                />
+
+                <div class="error-message">Error message</div>
+                <label class="form__absolute" for="name"
+                  >Name<span class="highlight-blue">*</span></label
+                >
               </div>
 
               <div class="form__group">
-                <label for="email"
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="&nbsp;"
+                  required
+                />
+                <div class="error-message">Error message</div>
+
+                <label class="form__absolute" for="email"
                   >Email address <span class="highlight-blue">*</span></label
                 >
-                <input type="email" id="email" name="email" required />
               </div>
 
               <div class="form__group">
-                <label for="organisation"
-                  >Organisation<span class="highlight-blue">*</span></label
-                >
                 <input
                   type="text"
                   id="organisation"
                   name="organisation"
+                  placeholder="&nbsp;"
                   required
                 />
+                <div class="error-message">Error message</div>
+
+                <label class="form__absolute" for="organisation"
+                  >Organisation<span class="highlight-blue">*</span></label
+                >
               </div>
 
               <div class="form__group">
-                <label for="message"
+                <select
+                  class="form__select"
+                  id="select-where"
+                  name="select-where"
+                >
+                  <option value="">Reason for contacting us</option>
+                  <option value="friends">1</option>
+                  <option value="youtoube">2</option>
+                  <option value="podcast">3</option>
+                  <option value="ad">4</option>
+                </select>
+              </div>
+
+              <div class="form__group">
+                <label class="form__relative" for="message"
                   >Your message<span class="highlight-blue">*</span></label
                 >
                 <textarea
@@ -100,21 +135,33 @@
               </div>
 
               <div class="form__group">
-                <div>
-                  <input type="checkbox" id="yes" name="yes" checked />
-                  <label for="yes"
-                    >Nascetur proin in lacinia pulvinar commodo sem scelerisque
-                    ullamcorper habitant fermentum ut interdum malesuada
-                    parturient blandit interdum vel integer ullamcorper sit a
-                    tincidunt.<span class="highlight-blue">*</span></label
-                  >
-                </div>
+                <input
+                  class="form__checkbox-box"
+                  type="checkbox"
+                  id="yes"
+                  name="yes"
+                  checked
+                />
+                <label class="form__checkbox" for="yes">
+                  <span class="form__checkbox-check"></span>
+                  Nascetur proin in lacinia pulvinar commodo sem scelerisque
+                  ullamcorper habitant fermentum ut interdum malesuada
+                  parturient blandit interdum vel integer ullamcorper sit a
+                  tincidunt.<span class="highlight-blue">*</span></label
+                >
               </div>
 
               <div class="form__submit">
                 <input type="submit" value="Submit" />
               </div>
             </form>
+
+            <div class="message">
+              <span class="message__box"
+                ><i class="message__icon icon-check"></i>Thank you. Your message
+                has been submitted.</span
+              >
+            </div>
           </div>
         </div>
       </section>

@@ -1,0 +1,93 @@
+.error {
+}
+
+.error__contnet {
+  color: $black;
+  padding: 160px 0;
+
+  @include respond(tab) {
+    padding: 75px 0;
+  }
+
+  @include respond(mob) {
+    padding: 60px 0;
+  }
+}
+
+.error__heading {
+  font-size: 200px;
+  font-weight: 700;
+  line-height: 200px;
+
+  @include respond(tab) {
+    font-size: 160px;
+    line-height: 160px;
+  }
+
+  @include respond(mob) {
+    font-size: 110px;
+    line-height: 110px;
+  }
+}
+
+.error__text {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 39px;
+  margin-bottom: 90px;
+
+  @include respond(tab) {
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 60px;
+  }
+
+  @include respond(mob) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.error__sub-heading {
+  color: $black;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+
+.error__list {
+  color: $black;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 45px;
+
+  @include respond(mob) {
+    margin-bottom: 30px;
+  }
+}
+
+.error__item {
+  font-size: 14px;
+  line-height: 22px;
+  color: $grey-text;
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &::before {
+    content: "";
+    background-color: $blue;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    display: block;
+    margin-right: 10px;
+  }
+}
+
+.error__btn {
+}

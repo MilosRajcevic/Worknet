@@ -14,9 +14,9 @@ export function createGalleryCards(dataLeaders, dataDirectors) {
     const htmlLeaders = `
           <div class="gallery-team__card card">
             <img
+            class="gallery-team__img card__img"
               src="${person.img}"
               alt="${person.name} picture"
-              class="gallery-team__img card__img"
             />
             <div class="gallery-team__description">
               <span class="gallery-team__name card__name"
@@ -36,7 +36,7 @@ export function createGalleryCards(dataLeaders, dataDirectors) {
                 Connor received a degree in Medical Sciences from the
                 University of Oxford.
               </p>
-              <a href="tel:+381666" class="gallery-team__link">
+              <a class="gallery-team__link"  href="tel:+381666">
                 <i class="gallery-team__icon icon-phone"></i
               ></a>
 
@@ -55,9 +55,9 @@ export function createGalleryCards(dataLeaders, dataDirectors) {
     const htmlDirectors = `
           <div class="gallery-team__card card">
             <img
+            class="gallery-team__img card__img"
               src="${person.img}"
               alt="${person.name} picture"
-              class="gallery-team__img card__img"
             />
             <div class="gallery-team__description">
               <span class="gallery-team__name card__name"
@@ -77,7 +77,7 @@ export function createGalleryCards(dataLeaders, dataDirectors) {
                 Connor received a degree in Medical Sciences from the
                 University of Oxford.
               </p>
-              <a href="tel:+381666" class="gallery-team__link">
+              <a class="gallery-team__link" href="tel:+381666" >
                 <i class="gallery-team__icon icon-phone"></i
               ></a>
 
