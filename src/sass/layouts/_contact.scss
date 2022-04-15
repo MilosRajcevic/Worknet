@@ -3,10 +3,17 @@
 
 .contact-info__content {
   margin-bottom: 100px;
+  @include respond(mob) {
+    margin-bottom: 50px;
+  }
 }
 
 .contact-info__heading {
   margin-bottom: 50px;
+
+  @include respond(tab) {
+    margin-bottom: 20px;
+  }
 }
 
 .contact-info__tel {
@@ -16,6 +23,14 @@
   line-height: 23px;
   color: $black;
   margin-bottom: 40px;
+
+  @include respond(mob) {
+    font-family: Mukta;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 29px;
+    margin-bottom: 20px;
+  }
 }
 
 .contact-info__number {
@@ -28,6 +43,10 @@
   font-weight: 500;
   line-height: 23px;
   color: $black;
+
+  @include respond(mob) {
+    font-weight: 700;
+  }
 }
 
 .contact-info__email {
@@ -40,6 +59,12 @@
   align-items: center;
   border-bottom: 1px solid $grey-light;
   max-width: 650px;
+
+  @include respond(mob) {
+    font-family: Mukta;
+    font-size: 18px;
+    line-height: 29px;
+  }
 
   &:last-of-type {
     margin-bottom: 40px;
@@ -69,4 +94,234 @@
   font-weight: 500;
   line-height: 39px;
   color: $black;
+}
+
+// Form
+
+.form {
+  margin-bottom: 30px;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+
+  & input {
+    color: $black;
+    max-width: 650px;
+    font-size: 23px;
+    line-height: 37px;
+    border: none;
+    border-bottom: 1px solid $grey-light;
+  }
+
+  & textarea {
+    padding: 5px;
+    border: 1px solid $grey-light;
+    border-radius: 10px;
+    height: 240px;
+    font-size: 23px;
+    line-height: 37px;
+    font-family: $font-mukta;
+  }
+
+  @include respond(mob) {
+    & textarea {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}
+.form__select,
+.form__absolute,
+.form__relative {
+  color: $black;
+  max-width: 650px;
+  font-size: 23px;
+  line-height: 37px;
+
+  @include respond(mob) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.form__absolute {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: font-size 0.3s, transform 0.3s, top 0.3s;
+}
+
+.form__relative {
+}
+
+.form__select {
+  padding: 10px 0;
+  font-weight: 400;
+  margin-left: -4px;
+  border: none;
+  border-bottom: 1px solid $grey-light;
+
+  & option {
+    font-family: $font-mukta;
+    max-width: 652px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+.form__checkbox-box {
+  opacity: 0;
+}
+
+.form__checkbox {
+  display: flex;
+  align-items: top;
+  font-size: 14px;
+  line-height: 22px;
+  color: $grey;
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+  font-weight: 700;
+}
+
+.form__checkbox-check {
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid $grey;
+  background-color: $white;
+  left: 0;
+
+  &::after {
+    content: "\e90c";
+    font-family: "icomoon" !important;
+    font-size: 16px;
+    display: block;
+    color: $blue;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.form__checkbox-box:checked ~ .form__checkbox .form__checkbox-check::after {
+  opacity: 1;
+}
+
+.form__submit {
+  & input {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: $blue;
+    padding: 15px 30px;
+    border-radius: 100px;
+    color: $white;
+    transition: background 0.3s;
+    width: fit-content;
+    line-height: 19px;
+
+    &:hover {
+      background: $blue-dark;
+    }
+
+    @include respond(tab) {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}
+
+.form__group input:focus ~ .form__absolute {
+  top: 0;
+  transform: translateY(-100%);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.error-message {
+  display: none;
+  font-size: 20px;
+  color: red;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid ~ .error-message {
+  display: block;
+
+  & ~ .form__absolute {
+    color: red;
+    top: 0;
+    transform: translateY(-100%);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+  }
+
+  & input {
+    border-bottom: 1px solid red;
+  }
+}
+
+input:not(:focus):not(:placeholder-shown):valid {
+  & ~ .error-message {
+    display: none;
+  }
+
+  & ~ .form__absolute {
+    top: 0;
+    transform: translateY(-100%);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+  }
+}
+
+// Message
+.message {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.message__box {
+  color: $black;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 42px;
+
+  @include respond(tab) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.message__icon {
+  color: $blue;
+  padding: 10px;
+  border: 1px solid $grey;
+  border-radius: 50%;
+  margin-right: 20px;
+  font-size: 20px;
+  font-weight: 700;
+
+  @include respond(tab) {
+    padding: 8px;
+    font-size: 16px;
+  }
 }
