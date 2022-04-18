@@ -144,12 +144,8 @@
     transform: translateX(-50%);
     top: 5px;
     transition: top 0.3s;
-  }
-
-  &.active {
-    & span {
-      top: 25px;
-    }
+    animation: move 0.5s;
+    animation-iteration-count: infinite;
   }
 
   @include respond(tab) {
